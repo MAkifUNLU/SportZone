@@ -33,7 +33,7 @@ namespace SportZone.Controllers
 
         public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
-            if (IsSessionAlive == false)
+            if (IsSessionAlive == true)
             {
                 filterContext.Result = RedirectToLoginPage();
                 return;
